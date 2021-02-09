@@ -1,7 +1,3 @@
-.container {
-  display: flex;
-}
-
 .conversations {
   background-color: #f0f0f0;
   box-sizing: border-box;
@@ -26,19 +22,6 @@
 
 .conversationList > li:nth-child(1) {
   margin-top: 0;
-}
-
-.messages {
-  background-color: #f0f0f0;
-  box-sizing: border-box;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 75%;
-  max-width: 75%;
-  margin-left: 0%;
-  right: auto;
-  left: auto;
-  height: 100vh;
 }
 
 .conversationTitle {

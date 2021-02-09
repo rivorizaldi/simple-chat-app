@@ -1,13 +1,8 @@
-import { Fragment } from "react";
-import ConversationList from "./components/ConversationsList";
+import Chat from "./components/Chat/Chat";
 import "./reset.css";
 
 function App() {
-  return (
-    <Fragment>
-      <ConversationList />
-    </Fragment>
-  );
+  return <Chat />;
 }
 
 export default App;

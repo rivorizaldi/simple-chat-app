@@ -1,5 +1,5 @@
 import React from "react";
-import { API_ROOT, HEADERS } from "../constants";
+import { API_ROOT, HEADERS } from "../../constants";
 import "./NewMessageForm.css";
 
 class NewMessageForm extends React.Component {
@@ -9,7 +9,8 @@ class NewMessageForm extends React.Component {
     disableButton: true,
   };
 
-  componentWillReceiveProps = (nextProps) => {
+  UNSAFE_componentWillReceiveProps = (nextProps) => {
+    console.log(nextProps);
     this.setState({ conversation_id: nextProps.conversation_id });
   };
 

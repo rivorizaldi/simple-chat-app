@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { API_ROOT, HEADERS } from "../constants";
+import { API_ROOT, HEADERS } from "../../constants";
 import "./NewConversationForm.css";
 
 export class NewConversationForm extends Component {
@@ -21,6 +21,7 @@ export class NewConversationForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     if (this.state.title.length > 0) {
+      console.log("send conversation", JSON.stringify(this.state));
       fetch(`${API_ROOT}/conversations`, {
         method: "POST",
         headers: HEADERS,
