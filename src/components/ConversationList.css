@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+}
+
+.conversations {
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  width: 25%;
+  max-width: 25%;
+  right: auto;
+  left: auto;
+  border-right: 1px solid rgb(175, 175, 175);
+}
+
+.conversationList > li {
+  padding: 16px 16px 12px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.active {
+  background-color: #cabcdc;
+}
+
+.conversationList > li:nth-child(1) {
+  margin-top: 0;
+}
+
+.messages {
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 75%;
+  max-width: 75%;
+  margin-left: 0%;
+  right: auto;
+  left: auto;
+  height: 100vh;
+}
+
+.conversationTitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.conversationText {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.conversationDate {
+  font-size: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.conversationMessagesContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
